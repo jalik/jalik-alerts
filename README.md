@@ -134,7 +134,7 @@ Template.notifications.onCreated(function () {
 
 Template.notifications.helpers({
     errors: function () {
-        return Template.instance().errors.find({type:'errors', sort: {createdAt: -1}});
+        return Template.instance().errors.find({type:'error', sort: {createdAt: -1}});
     },
     notifications: function () {
         return Template.instance().alerts.find({type:'notification', sort: {createdAt: -1}});
